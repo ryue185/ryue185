@@ -4,7 +4,7 @@
 - 🌱 I’m currently learning R, Python, C, SQL and stuff
 - 📫 Reach me at ryue@uchicago.edu
 -------
-- CEX.R is a part of a project from RA work I have been doing. I use R to extract relevant columns from a large, online, publicly available data set to complete graphs and computation relevant for the RA project. Though it is simple, it is a testament to my ability to access online databases with code and process large datasets. 
+- CEX.R is part of a project from RA work I have been doing. I use R to extract relevant columns from Consumer Expenditure Surveys(CEX), a large, online, publicly available data set, to complete graphs and computation relevant to my RA project. Though it may not be super sophisticated, it is a testament to my ability to access online databases efficiently with code and process large datasets. 
 
 <!---
 ryue185/ryue185 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
