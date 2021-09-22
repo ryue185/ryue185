@@ -28,9 +28,11 @@ for(year_counter in 0:18){
       file_str<-paste("intrvw",year_string,"/fmli",year_string,file_counter,".csv",sep="")
     }
     temp <- read_csv(file_str)
-    temp_h <-data.frame(temp$HOUSCQ)
+    temp_h <-data.frame(temp$HOUSCQ*temp$FINLWT21)
+    temp_h<-temp_h/sum(temp$FINLWT21[temp$HOUSCQ>0])
     colnames(temp_h)<-(paste(year_string,file_counter,sep="-"))
-    temp_f <-data.frame(temp$FOODCQ)
+    temp_f <-data.frame(temp$FOODCQ*temp$FINLWT21)
+    temp_f<-  temp_f/sum(temp$FINLWT21[temp$FOODCQ>0])
     colnames(temp_f)<-(paste(year_string,file_counter,sep="-"))
     house<-merge(house,temp_h,all=TRUE,by=0)
     house<-subset(house,select=-c(Row.names))
@@ -44,12 +46,13 @@ for(year_counter in 0:18){
 
 food[food==0]<-NA
 house[house==0]<-NA
-food_mean<-data.frame(colMeans(food, na.rm = TRUE))
+food_mean<-data.frame(colSums(food, na.rm = TRUE))
 colnames(food_mean)<-c("mean_food_spending")
 food_mean$quarter<-rownames(food_mean)
-house_mean<-data.frame(colMeans(house, na.rm = TRUE))
+house_mean<-data.frame(colSums(house, na.rm = TRUE))
 colnames(house_mean)<-c("mean_housing_spending")
 house_mean$quarter<-rownames(house_mean)
+
 
 GDPDEF_URL<-"https://fred.stlouisfed.org/graph/fredgraph.csv?bgcolor=%23e1e9f0&chart_type=line&drp=0&fo=open%20sans&graph_bgcolor=%23ffffff&height=450&mode=fred&recession_bars=on&txtcolor=%23444444&ts=12&tts=12&width=1168&nt=0&thu=0&trc=0&show_legend=yes&show_axis_titles=yes&show_tooltip=yes&id=GDPDEF&scale=left&cosd=1947-01-01&coed=2021-04-01&line_color=%234572a7&link_values=false&line_style=solid&mark_type=none&mw=3&lw=2&ost=-99999&oet=99999&mma=0&fml=a&fq=Quarterly&fam=avg&fgst=lin&fgsnd=2020-02-01&line_index=1&transformation=lin&vintage_date=2021-09-02&revision_date=2021-09-02&nd=1947-01-01"
 download.file(GDPDEF_URL,"GDPDEF.csv")
@@ -92,4 +95,5 @@ ggplot(data=food_mean,aes(x=quarter,y=mean_food_spending_log))+
   geom_point(shape=9)+
   ylab("CEX average food spending log 2000Q1") + xlab("Quarter")+
   theme(axis.text.x = element_text(angle = 90))
+
 
