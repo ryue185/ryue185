@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @ryue185, an undergraduate student majoring in Econ and Stats at the University of Chicago
-- 👀 Here will be used to store data analysis stuff on Finance related projects from research assistant works 
-- ♻️ And random bits of code that I decide to keep around and not throw away
+- 👀 You will find here pieces code from personal projects, classes, and research assistant works that I decided to store online 
 - 🌱 I’m currently learning R, Python, C, SQL and stuff
 - 📫 Reach me at ryue@uchicago.edu
 - 📦 Contained in the main repository are micellaneous code that doesn't warrant its own repository
