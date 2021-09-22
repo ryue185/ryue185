@@ -1,12 +1,16 @@
 import re
 
+pip install syllapy
+
+import syllapy
+
 sentence_split = ['.','?','!','|']
 pairs = ["'",'"','[',']','<','>','(',')','{','}']
 alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 digit = ['0','1','2','3','4','5','6','7','8','9']
 
 text = "The value is 32.7. The color is 'turquoise', visualization unachievable? The value's observation is complete!"
-
+# this is a funky test case
 text_lower = text.lower()
 print(text_lower)
 
@@ -54,7 +58,7 @@ def numSentences(input_text):
 
 numSentences(text)
 
-def wordLenDis(input_text):
+def wordLenDis(input_text,pr=True):
   input_copy = input_text.lower()
   words_list = toWords(input_copy)
   sw_count = 0
@@ -69,27 +73,29 @@ def wordLenDis(input_text):
 
   for i in range(len(words_list)):
     if((words_list[i][0] in alphabet) or words_list[i][0] in digit or words_list[i][0]=='"' or words_list[i][0]=="'"):
-      if(len(words_list[i])<6 
-         or ((words_list[i][0] in pairs) and len(words_list[i])<8)
-         or (words_list[i][0]!="'" and ("'" in words_list[i]) and len(words_list[i])<7)):
+      if(len(words_list[i])<5 
+         or ((words_list[i][0] in pairs) and len(words_list[i])<7)
+         or (words_list[i][0]!="'" and ("'" in words_list[i]) and len(words_list[i])<6)):
         sw_count=sw_count+1
         sw_count = readjust(i,sw_count)
 
-      elif(len(words_list[i])<12 
-         or ((words_list[i][0] in pairs) and len(words_list[i])<8)
-         or (words_list[i][0]!="'" and ("'" in words_list[i]) and len(words_list[i])<13)):
+      elif(len(words_list[i])<10 
+         or ((words_list[i][0] in pairs) and len(words_list[i])<12)
+         or (words_list[i][0]!="'" and ("'" in words_list[i]) and len(words_list[i])<11)):
         mw_count+=1
         mw_count = readjust(i,mw_count) 
 
       else:
         lw_count+=1
         lw_count = readjust(i,lw_count) 
+  if(pr):
+    print("There are", sw_count, "short words")
+    print("There are", mw_count, "mid-length words")
+    print("There are", lw_count, "long words")
+  
+  return [sw_count,mw_count,lw_count]
 
-  print("There are", sw_count, "short words")
-  print("There are", mw_count, "mid-length words")
-  print("There are", lw_count, "long words")
-
-wordLenDis(text)
+wordLenDis(text,True)
 
 def avg_Wordlen(input_text):
   input_copy = input_text.lower()
@@ -108,3 +114,36 @@ def avg_Wordlen(input_text):
 
 print(avg_Wordlen(text))
 
+def hardWordCount(input_text):
+  input_copy = input_text.lower()
+  words_list = toWords(input_copy)
+  count = 0
+  for i in words_list:
+    if(syllapy.count(i)>=3):
+      count+=1
+  return count
+
+hardWordCount(text)
+
+def FOG(input_text):
+  # why is this important? 
+  # this is a measure of readability of text
+  # and in Finance the FOG of 10Ks is shown to affect
+  # analysts following, analysts responsiveness, and analysts response speed
+  input_copy = input_text.lower()
+  words_list = toWords(input_copy)
+  wcount = wordCount(input_text)
+  scount = numSentences(input_text)
+  longwords = hardWordCount(input_text)
+  return int(0.4*((wcount/scount)+longwords*100/wcount))
+
+FOG(text)
+
+essay_excerpt = "Though considered a radically new argument that marked the height of Enlightenment, Locke’s idea of the Separation of Church and State was very much rooted in Europe’s past. Historical trends that arose from the jumbling of temporal and spiritual power have created so much conflict that separating the two was necessary to maintain Europe’s religious peace and the individual’s liberty of conscience. The king’s role as the defender of the faith, the Protestant Reformation, and the constant power struggle between kings and Popes all provide the necessary historical context for understanding Locke’s arguments and are possibly what prompted him to make them. "
+# this test case is an excerpt from one of my history essays
+# using it to test whether my functions can handle longer passages with harder words
+print(wordCount(essay_excerpt))
+print(numSentences(essay_excerpt))
+print(avg_Wordlen(essay_excerpt))
+print(hardWordCount(essay_excerpt))
+FOG(essay_excerpt)
