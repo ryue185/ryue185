@@ -80,7 +80,7 @@ for(a in counties){
   }
 }
 ```
-Doing an extra step to find the average quarterly employment level, used for 
+Doing an extra step to find the average quarterly employment level, used for the weighted average calculations later
 ```{r}
 ne_data<-ne_data%>%mutate(q_emplvl = (month1_emplvl+month2_emplvl+month3_emplvl)/3)
 ```
