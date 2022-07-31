@@ -4,7 +4,15 @@ author: "Raymon Yue"
 date: "7/30/2022"
 output: html_document
 ---
-In this Econometrics class at UChicago, I chose to write my final paper on the effects of mandatory paid maternity leave on women's wages. I decided to use data from the Bureau of Labor Statistics, with by quarterly, by industry, by county average wage estimates based on quarterly surveys conducted by the government. This problem is interesting because intuitively, paid maternity leave laws could postively impact women's wages because it gives child rearing mothers job safety, encouraging them to stay at the same work place and accumulate more work experience and reach higher positions. However, it could also negatively impact women's wages, as employers may intentionally lower women's wages so they don't bear all the costs of the the paid maternity leave policy. U.S. is a particularly interesting place to study this, as it is one of the last countries in the world without national paid maternity leave laws, and state legislatures have to pass these laws on their own and at their own pace. The focus of this research is on New York (which enacted paid maternity leave in 2018), and its Northeastern U.S. neighbors, some of which passed similar laws much earlier (e.g. NJ, 2013), while others have yet to passed them (e.g. PA).
+In this Econometrics class at UChicago, I chose to write my final paper on the effects of mandatory paid maternity leave on women's wages. 
+I decided to use data from the Bureau of Labor Statistics, with by quarterly, by industry, by county average wage estimates 
+based on quarterly surveys conducted by the government. This problem is interesting because intuitively, paid maternity leave laws 
+could postively impact women's wages because it gives child rearing mothers job safety, encouraging them to stay at the same work place
+and accumulate more work experience and reach higher positions. However, it could also negatively impact women's wages, as employers may
+intentionally lower women's wages so they don't bear all the costs of the the paid maternity leave policy. U.S. is a particularly interesting
+place to study this, as it is one of the last countries in the world without national paid maternity leave laws, and state legislatures have
+to pass these laws on their own and at their own pace. The focus of this research is on New York (which enacted paid maternity leave in 2018),
+and its Northeastern U.S. neighbors, some of which passed similar laws much earlier (e.g. NJ, 2013), while others have yet to passed them (e.g. PA).
 
 In this Rmd notebook, I gather publicly available data on BLS.gov, clean them, and perform diff-in-diff regressions on it.
 ```{r setup, include=FALSE}
@@ -87,12 +95,14 @@ basic_nypa<-ne_data%>%
   mutate(treat_state = as.integer(area_fips/1000)==36)%>%
   mutate(DID = treat_state*treat_time)
 ```
-The regression model includes all three dummies, most importantly the DID estimator which is the interaction term of treated time and state, and industry fixed effects
+The regression model includes all three dummies, most importantly the DID estimator which is the interaction term of treated 
+time and state, and industry fixed effects
 ```{r}
 summary(lm(avg_wkly_wage~treat_time+treat_state+DID+factor(industry_code),data=basic_nypa))
 ```
 
-Here I construct an alternative data set where the average weekly wages are weighted averages across industries, with average quarterly employment level as the weight
+Here I construct an alternative data set where the average weekly wages are weighted averages across industries, with average 
+quarterly employment level as the weight
 ```{r}
 wa_wage_nypa<-basic_nypa%>%
   subset(select = c(area_fips, year, qtr, avg_wkly_wage,q_emplvl))%>%
