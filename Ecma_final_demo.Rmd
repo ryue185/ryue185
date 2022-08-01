@@ -4,7 +4,7 @@ author: "Raymon Yue"
 date: "7/30/2022"
 output: html_document
 ---
-In this Econometrics class at UChicago, I chose to write my final paper on the effects of mandatory paid maternity leave on women's wages. 
+In this Econometrics class at UChicago, I chose to write my final paper on the effects of state paid maternity leave laws on women's wages. 
 I decided to use data from the Bureau of Labor Statistics, with by quarterly, by industry, by county average wage estimates 
 based on quarterly surveys conducted by the government. This problem is interesting because intuitively, paid maternity leave laws 
 could postively impact women's wages because it gives child rearing mothers job safety, encouraging them to stay at the same work place
