@@ -4,6 +4,6 @@
 ------- 
 - wordcounting.py is the fruit of me playing around with some basic tools in python to do some simple textual analysis. The functions defined in this file take text in a string and do word counts, sentence counts, and find the words' length
 --------
-- anime_english containts a python file which is me toying around with a bit of natural language processing code I found and read up on about. I didn't write all of it. The txt file is some anime and light novel titles that I used to train the NLP model, trying to see if I can generate text with the distinctive characteristics of broken, cringy translated anime 🥺 english 
+- Ecma final demo is condensed verion of the R code I wrote for ECMA 3132, an econometrics and data science class at the University of Chicago. It is used for retrieving data from BLS and analyzing it with a Diff-in-Diff methodology for the final paper of that class.
 --------
 - life_cycle is a plot I made in RA work that I really liked. It shows how individual's annual credit card consumption change over the life time by overlaying lines representing different age groups together. The plot here represents the attached csv file, which is a modified version of the original data file I worked with (only selected columns, all entry values were changed to mask information). I cannot include the original file, both because it is too large and because it is private data.
