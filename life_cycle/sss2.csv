@@ -1,3 +1,158 @@
+"Name","Ticker","SEC CIK","Exchange","Exchange Country","Business Country","Country of Classification","Company Name","Company Id","SecId","CUSIP","ISIN","Industry","Market Cap (mil) 
+(Daily) 
+Base 
+Currency","Earnings Yield (Daily)","P/E Ratio (TTM) (Long)","Price 52 Wk High 
+Base 
+Currency","Price 52 Wk Low 
+Base 
+Currency","Current Return %","Date: Inc Statement TTM","EPS TTM","Revenue (mil) 
+TTM 
+Inc Statement Currency","Net Income (mil) 
+TTM 
+Inc Statement Currency","Dividend per Share 
+TTM 
+Inc Statement Currency","Base 
+Currency","Primary Share","Primary Share for Company","Sector","GICS Sub-Industry","GICS Industry","GICS Industry Group","GICS Sector","Russell Sector","Russell Sub-Sector","Russell Industry","ADR","MSCI Country","Equity 
+Style Box (Long)","Stock Type","Security Type","Submarket","Sustainalytics ESG Risk Score 
+2011-01","Sustainalytics ESG Risk Score 
+2011-02","Sustainalytics ESG Risk Score 
+2011-03","Sustainalytics ESG Risk Score 
+2011-04","Sustainalytics ESG Risk Score 
+2011-05","Sustainalytics ESG Risk Score 
+2011-06","Sustainalytics ESG Risk Score 
+2011-07","Sustainalytics ESG Risk Score 
+2011-08","Sustainalytics ESG Risk Score 
+2011-09","Sustainalytics ESG Risk Score 
+2011-10","Sustainalytics ESG Risk Score 
+2011-11","Sustainalytics ESG Risk Score 
+2011-12","Sustainalytics ESG Risk Score 
+2012-01","Sustainalytics ESG Risk Score 
+2012-02","Sustainalytics ESG Risk Score 
+2012-03","Sustainalytics ESG Risk Score 
+2012-04","Sustainalytics ESG Risk Score 
+2012-05","Sustainalytics ESG Risk Score 
+2012-06","Sustainalytics ESG Risk Score 
+2012-07","Sustainalytics ESG Risk Score 
+2012-08","Sustainalytics ESG Risk Score 
+2012-09","Sustainalytics ESG Risk Score 
+2012-10","Sustainalytics ESG Risk Score 
+2012-11","Sustainalytics ESG Risk Score 
+2012-12","Sustainalytics ESG Risk Score 
+2013-01","Sustainalytics ESG Risk Score 
+2013-02","Sustainalytics ESG Risk Score 
+2013-03","Sustainalytics ESG Risk Score 
+2013-04","Sustainalytics ESG Risk Score 
+2013-05","Sustainalytics ESG Risk Score 
+2013-06","Sustainalytics ESG Risk Score 
+2013-07","Sustainalytics ESG Risk Score 
+2013-08","Sustainalytics ESG Risk Score 
+2013-09","Sustainalytics ESG Risk Score 
+2013-10","Sustainalytics ESG Risk Score 
+2013-11","Sustainalytics ESG Risk Score 
+2013-12","Sustainalytics ESG Risk Score 
+2014-01","Sustainalytics ESG Risk Score 
+2014-02","Sustainalytics ESG Risk Score 
+2014-03","Sustainalytics ESG Risk Score 
+2014-04","Sustainalytics ESG Risk Score 
+2014-05","Sustainalytics ESG Risk Score 
+2014-06","Sustainalytics ESG Risk Score 
+2014-07","Sustainalytics ESG Risk Score 
+2014-08","Sustainalytics ESG Risk Score 
+2014-09","Sustainalytics ESG Risk Score 
+2014-10","Sustainalytics ESG Risk Score 
+2014-11","Sustainalytics ESG Risk Score 
+2014-12","Sustainalytics ESG Risk Score 
+2015-01","Sustainalytics ESG Risk Score 
+2015-02","Sustainalytics ESG Risk Score 
+2015-03","Sustainalytics ESG Risk Score 
+2015-04","Sustainalytics ESG Risk Score 
+2015-05","Sustainalytics ESG Risk Score 
+2015-06","Sustainalytics ESG Risk Score 
+2015-07","Sustainalytics ESG Risk Score 
+2015-08","Sustainalytics ESG Risk Score 
+2015-09","Sustainalytics ESG Risk Score 
+2015-10","Sustainalytics ESG Risk Score 
+2015-11","Sustainalytics ESG Risk Score 
+2015-12","Sustainalytics ESG Risk Score 
+2016-01","Sustainalytics ESG Risk Score 
+2016-02","Sustainalytics ESG Risk Score 
+2016-03","Sustainalytics ESG Risk Score 
+2016-04","Sustainalytics ESG Risk Score 
+2016-05","Sustainalytics ESG Risk Score 
+2016-06","Sustainalytics ESG Risk Score 
+2016-07","Sustainalytics ESG Risk Score 
+2016-08","Sustainalytics ESG Risk Score 
+2016-09","Sustainalytics ESG Risk Score 
+2016-10","Sustainalytics ESG Risk Score 
+2016-11","Sustainalytics ESG Risk Score 
+2016-12","Sustainalytics ESG Risk Score 
+2017-01","Sustainalytics ESG Risk Score 
+2017-02","Sustainalytics ESG Risk Score 
+2017-03","Sustainalytics ESG Risk Score 
+2017-04","Sustainalytics ESG Risk Score 
+2017-05","Sustainalytics ESG Risk Score 
+2017-06","Sustainalytics ESG Risk Score 
+2017-07","Sustainalytics ESG Risk Score 
+2017-08","Sustainalytics ESG Risk Score 
+2017-09","Sustainalytics ESG Risk Score 
+2017-10","Sustainalytics ESG Risk Score 
+2017-11","Sustainalytics ESG Risk Score 
+2017-12","Sustainalytics ESG Risk Score 
+2018-01","Sustainalytics ESG Risk Score 
+2018-02","Sustainalytics ESG Risk Score 
+2018-03","Sustainalytics ESG Risk Score 
+2018-04","Sustainalytics ESG Risk Score 
+2018-05","Sustainalytics ESG Risk Score 
+2018-06","Sustainalytics ESG Risk Score 
+2018-07","Sustainalytics ESG Risk Score 
+2018-08","Sustainalytics ESG Risk Score 
+2018-09","Sustainalytics ESG Risk Score 
+2018-10","Sustainalytics ESG Risk Score 
+2018-11","Sustainalytics ESG Risk Score 
+2018-12","Sustainalytics ESG Risk Score 
+2019-01","Sustainalytics ESG Risk Score 
+2019-02","Sustainalytics ESG Risk Score 
+2019-03","Sustainalytics ESG Risk Score 
+2019-04","Sustainalytics ESG Risk Score 
+2019-05","Sustainalytics ESG Risk Score 
+2019-06","Sustainalytics ESG Risk Score 
+2019-07","Sustainalytics ESG Risk Score 
+2019-08","Sustainalytics ESG Risk Score 
+2019-09","Sustainalytics ESG Risk Score 
+2019-10","Sustainalytics ESG Risk Score 
+2019-11","Sustainalytics ESG Risk Score 
+2019-12","Sustainalytics ESG Risk Score 
+2020-01","Sustainalytics ESG Risk Score 
+2020-02","Sustainalytics ESG Risk Score 
+2020-03","Sustainalytics ESG Risk Score 
+2020-04","Sustainalytics ESG Risk Score 
+2020-05","Sustainalytics ESG Risk Score 
+2020-06","Sustainalytics ESG Risk Score 
+2020-07","Sustainalytics ESG Risk Score 
+2020-08","Sustainalytics ESG Risk Score 
+2020-09","Sustainalytics ESG Risk Score 
+2020-10","Sustainalytics ESG Risk Score 
+2020-11","Sustainalytics ESG Risk Score 
+2020-12","Sustainalytics ESG Risk Score 
+2021-01","Sustainalytics ESG Risk Score 
+2021-02","Sustainalytics ESG Risk Score 
+2021-03","Sustainalytics ESG Risk Score 
+2021-04","Sustainalytics ESG Risk Score 
+2021-05","Sustainalytics ESG Risk Score 
+2021-06","Sustainalytics ESG Risk Score 
+2021-07","Sustainalytics ESG Risk Score 
+2021-08","Sustainalytics ESG Risk Score 
+2021-09","Sustainalytics ESG Risk Score 
+2021-10","Sustainalytics ESG Risk Score 
+2021-11","Sustainalytics ESG Risk Score 
+2021-12","Sustainalytics ESG Risk Score 
+2022-01","Sustainalytics ESG Risk Score 
+2022-02","Sustainalytics ESG Risk Score 
+2022-03","Sustainalytics ESG Risk Score 
+2022-04","Sustainalytics ESG Risk Score 
+2022-05","Sustainalytics ESG Risk Score 
+2022-06","Sustainalytics ESG Risk Score 
+2022-07"
 "Ionis Pharmaceuticals Inc","IONS","874015","Nasdaq - All Markets","United States","United States","United States","Ionis Pharmaceuticals Inc","0C00000BLV","0P0000030Q","462222100","US4622221004","Biotechnology","6,481.58","0.00","","46.12","25.04","0.02","2022-03-31","-0.02","840.77","-3.89","","US Dollar","Yes","Yes","Healthcare","Biotechnology","Biotechnology","Pharmaceuticals and Biotechnology","Health Care","Healthcare","Pharmaceuticals & Biotech","Pharmaceuticals","No","United States","Small Value","Distressed","Common Stock","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","44.00","","44.00","44.00","43.00","43.00","43.00","43.00","43.00","43.00","","","43.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","43.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","42.00","35.65","35.78","32.04","32.04","32.04","32.04","32.04","32.04","31.42","31.42","29.61","29.61","29.61","29.64","29.64","29.64","29.64","29.64","29.64","29.64","29.64","29.79","29.79","29.79","29.79","29.79","29.79","29.79","29.79","29.79","29.79","29.45","29.45","29.45","29.45"
 "Iovance Biotherapeutics Inc","IOVA","1425205","Nasdaq - All Markets","United States","United States","United States","Iovance Biotherapeutics Inc","0C000014I4","0P0000KXRO","462260100","US4622601007","Biotechnology","1,942.53","-0.20","","27.96","6.18","1.07","2022-06-30","-2.40","0.00","-376.41","","US Dollar","Yes","Yes","Healthcare","Biotechnology","Biotechnology","Pharmaceuticals and Biotechnology","Health Care","Healthcare","Pharmaceuticals & Biotech","Biotechnology","No","United States","Small Blend","Distressed","Common Stock","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","39.00","","","39.00","","","","","","39.00","39.00","39.00","38.00","38.00","38.00","38.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","39.00","40.00","40.00","40.00","40.00","40.00","40.00","40.00","40.00","40.00","31.08","31.08","30.50","30.50","30.50","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","33.71","32.96","32.96","32.96","32.96","32.96","32.61","32.61","32.61","32.61"
 "IPG Photonics Corp","IPGP","1111928","Nasdaq - All Markets","United States","United States","United States","IPG Photonics Corp","0C00000MHB","0P00006YLC","44980X109","US44980X1090","Semiconductor Equipment & Materials","5,129.24","0.05","20.46","182.34","82.68","0.31","2022-06-30","5.02","1,490.62","267.03","","US Dollar","Yes","Yes","Technology","Electronic Manufacturing Services","Electronic Equipment, Instruments and Components","Technology Hardware and Equipment","Information Technology","Technology","Electronics","Production technology equipment","No","United States","Small Blend","Cyclical","Common Stock","","","","","","","","","51.00","51.00","51.00","51.00","51.00","51.00","51.00","51.00","51.00","51.00","51.00","51.00","50.00","","","","","","","","","","","","","","","","","","49.00","","","","","","","","","","","","","","","","","48.00","48.00","48.00","","","","48.00","","","48.00","48.00","48.00","","48.00","48.00","","","","","48.00","48.00","48.00","48.00","48.00","48.00","48.00","48.00","46.00","46.00","46.00","46.00","46.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","45.00","12.28","12.25","13.63","13.63","13.63","13.63","13.63","13.63","13.63","13.63","13.63","13.63","13.46","13.49","13.49","13.49","13.49","13.49","13.49","13.75","12.17","12.17","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93","11.93"
