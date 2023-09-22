@@ -11,7 +11,6 @@ process_url<-function(str){
 
 grab_pres_url<-function(ticker){
   url_base<-paste("https://seekingalpha.com/symbol/", ticker, "/earnings/transcripts?page=", sep="")
-  keywords <- c("Slide", "Presentation")  # Add your keywords here
   ret_urls <- character(0)
   for (i in 1:8) {
     url <- paste(url_base, i, sep = "")
