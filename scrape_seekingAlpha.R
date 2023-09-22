@@ -4,7 +4,6 @@ library(httr)
 
 setwd("/Users/RaymonYue/Desktop")
 process_url<-function(str){
-  
   split_string<-unlist(strsplit(str,"?source=content_type"))
   return(paste("https://seekingalpha.com/",split_string[1],sep=""))
 }
